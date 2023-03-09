@@ -1,0 +1,21 @@
+@import "../../../App.scss";
+
+.card-container {
+    @apply w-80 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700;
+
+    img {
+        @apply rounded-t-lg cursor-pointer;
+    }
+
+    h5 {
+        @apply mb-2 text-2xl font-bold tracking-tight text-gray-500 dark:text-white;
+    }
+
+    .card-description {
+        @apply mb-3 font-normal text-gray-500;
+
+        &--button {
+            @apply inline-flex items-center px-3 py-2 text-sm text-base text-center text-yellow-300 bg-blue rounded-lg hover:bg-yellow-400 hover:text-blue hover:font-semibold;
+        }
+    }
+}
