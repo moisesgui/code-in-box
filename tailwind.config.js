@@ -5,6 +5,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      spacing: {
+        '128': '32rem',
+      },
+      backgroundImage: {
+        'hero-image': "url('/src/assets/imagens/bg-hero.png')",
+        'hero-image-2': "url('/src/assets/imagens/bg-hero2.png')",
+      },
       colors: {
         white: '#ffff',
         black: '#111',
