@@ -1,9 +1,9 @@
 import React from "react";
 
-
 import logoCode from '../../assets/imagens/logo01.png';
 import burgerMenu from '../../assets/imagens/burger-menu.png';
-import { ProductCard } from "../../shared/components/productCard/ProductCard";
+import { Carrousel } from "../../shared/components/slider/Slider";
+
 import './Home.scss';
 
 export const Home = () => {
@@ -30,9 +30,9 @@ export const Home = () => {
           </form>
           
           <nav className="hidden md:flex">
-            <a href="#" className="mr-5 hover:text-white">Home</a>
-            <a href="#" className="mr-5 hover:text-white">Sobre</a>
-            <a href="#" className="mr-5 hover:text-white">Contato</a>
+            <a href="#" className="mr-5 hover:text-yellow-500">Home</a>
+            <a href="#" className="mr-5 hover:text-yellow-500">Sobre</a>
+            <a href="#" className="mr-5 hover:text-yellow-500">Contato</a>
           </nav>
         </div>
       </header>
@@ -49,8 +49,8 @@ export const Home = () => {
       </section>
 
       <section className="container mx-auto">
-        <div className="product-card-container">
-          <ProductCard />
+        <div>
+          <Carrousel />
         </div>
       </section>
     </div>

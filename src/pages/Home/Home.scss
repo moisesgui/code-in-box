@@ -46,10 +46,10 @@
       @apply max-w-5xl mb-4 text-left text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white;
     }
     p {
-      @apply mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400;
+      @apply mb-10 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400;
     }
 		a {
-			@apply inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-yellow-500 bg-blue rounded-lg hover:bg-yellow-500 hover:text-blue;
+			@apply inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-yellow-500 bg-blue rounded-xl hover:bg-yellow-500 hover:text-blue;
 		}
 
 		@include mobile {
