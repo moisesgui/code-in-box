@@ -13,7 +13,7 @@ export const Carrousel = () => {
     centerMode: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    variableWidth: true
+    variableWidth: true,
   };
 
   return (

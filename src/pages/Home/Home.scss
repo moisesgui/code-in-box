@@ -9,12 +9,14 @@
     .header__content {
       @apply container flex flex-wrap mx-auto py-4 px-0 justify-between flex-col md:flex-row items-center;
 
-      &--logo {
-        @apply flex font-sans font-medium items-center text-white mb-4 md:mb-0 cursor-pointer;
+      .header__logo-container {
+        .logo-burger {
+          @apply w-12
+        }
       }
     }
-
-    input {
+      
+      input {
       @apply bg-gray-800 text-white rounded-lg border border-gray-700 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mr-4 w-full md:w-128;
     }
 
@@ -32,6 +34,13 @@
       .header__logo-container {
         @apply w-full flex flex-row items-center justify-around;
       }
+    }
+  }
+
+  .banner-desktop {
+    @apply hidden md:flex w-full h-128;
+    img {
+      @apply h-full
     }
   }
 
