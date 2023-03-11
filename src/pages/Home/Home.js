@@ -18,7 +18,7 @@ export const Home = () => {
               <img src={burgerMenu} className="logo-burger" alt="code-logo" width={40} />
             </button>
             <a href="#" className="header_content--logo">
-              <img src={logoCode} alt="code-logo" width={220} />
+              <img src={logoCode} alt="code-logo" width={200} />
             </a>
           </div>
           <form>
@@ -39,9 +39,14 @@ export const Home = () => {
         </div>
       </header>
 
-      <div className="banner-desktop">
-        <img src={bannerImg} alt="banner-topo" className="w-full h-128"/>
-      </div>
+      <section className="banner">
+        <div className="banner--mini">
+          <p>Os melhores cursos de ti, você vai encontrar aqui!</p>
+        </div>
+        <div className="banner--desktop">
+          <img src={bannerImg} alt="banner-topo" />
+        </div>
+      </section>
 
       <section className="container mx-auto">
         <div className="hero">
