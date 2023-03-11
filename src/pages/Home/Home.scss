@@ -60,6 +60,10 @@
     @apply w-full flex items-center flex-wrap justify-center m-auto p-4;
   }
 
+  .carousel-slick {
+    @apply container mx-auto mb-8
+  }
+
   .hero {
     @apply h-128 flex flex-col items-center justify-center bg-hero-image-2 bg-contain bg-no-repeat bg-right;
 
@@ -84,5 +88,44 @@
 				@apply text-center;
 			}
 		}
+  }
+
+  .newsletter {
+    @apply bg-blue dark:bg-gray-900;
+
+    &__container {
+      @apply px-8 py-8 md:px-0 mx-auto max-w-screen-xl;
+      
+      &--content {
+        @apply mx-auto max-w-screen-md sm:text-center;
+
+        h2 {
+          @apply mb-4 text-3xl tracking-tight font-bold text-gray-50 sm:text-4xl dark:text-white;
+        }
+        p {
+          @apply mx-auto mb-8 md:mb-8 max-w-2xl font-light text-gray-50 sm:text-xl dark:text-gray-400;
+        }
+
+        .form__content {
+          @apply items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0;
+
+          &--svg_container {
+            @apply flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none;
+
+            svg {
+              @apply w-5 h-5 text-gray-500 dark:text-gray-400;
+            }
+          }
+
+          input {
+            @apply block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
+          }
+          button {
+            @apply py-3 px-5 w-full md:w-32 text-sm text-center text-blue font-bold rounded-lg  border border-yellow-600 cursor-pointer bg-yellow-600 sm:rounded-none sm:rounded-r-lg hover:bg-yellow-500 focus:ring-4;
+          }
+        }
+        
+      }
+    }
   }
 }
