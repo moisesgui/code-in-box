@@ -40,11 +40,19 @@
   .banner {
 
     &--mini {
-      @apply h-6 text-center text-white font-semibold text-sm bg-gray-500;
+      @apply flex justify-center items-center h-7 text-center text-sm text-white font-semibold bg-gray-500;
+
+      @include mobile {
+        @apply text-xs items-center
+      }
     }
 
     &--desktop {
       @apply hidden md:flex w-full h-128;
+
+      img {
+        @apply w-full;
+      }
     }
   }
 

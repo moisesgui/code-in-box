@@ -1,19 +1,17 @@
 import React from "react";
-
-import thumbnail from '../../../assets/imagens/react-thumbnail.png'
 import './ProductCard.scss';
 
-export const ProductCard = () => {
+export const ProductCard = (props) => {
 
   return (
     <>
       <div className="card-container">
-        <img src={thumbnail} alt="course thumbnails" />
-        <div className="px-5 pb-5 pt-2">
+        <img src={props.img} alt="course-thumbnails" />
+        <div className="px-4 pb-5 pt-2">
           <a href="#">
-            <h5>Curso básico de introdução a React e Redux</h5>
+            <h5>{props.title}</h5>
           </a>
-          <p className="card-description">Aprenda React Js, Redux, Webpack, Redux-Form, MongoDB, Express, Node e Vários exercícios práticos e Duas Apps do ZERO!</p>
+          <p className="card-description">{props.description}</p>
           <div className="w-full items-end">
             <a href="#" className="card-description--button">
               Acessar curso

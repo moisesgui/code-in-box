@@ -1,9 +1,8 @@
 import React from "react";
 
+import { Slider } from "../../shared/components/slider/Slider";
 import logoCode from '../../assets/imagens/logo01.png';
 import burgerMenu from '../../assets/imagens/burger-menu.png';
-import { Carrousel } from "../../shared/components/slider/Slider";
-
 import bannerImg from '../../assets/imagens/banner-desktop.png';
 import './Home.scss';
 
@@ -41,7 +40,7 @@ export const Home = () => {
 
       <section className="banner">
         <div className="banner--mini">
-          <p>Os melhores cursos de ti, você vai encontrar aqui!</p>
+          <p>Os melhores cursos de desenvolvimento, você só encontrar aqui!</p>
         </div>
         <div className="banner--desktop">
           <img src={bannerImg} alt="banner-topo" />
@@ -61,9 +60,33 @@ export const Home = () => {
 
       <section className="carrousel-slick container mx-auto">
         <div>
-          <Carrousel />
+          <Slider />
         </div>
       </section>
+      
+      <section class="bg-blue dark:bg-gray-900">
+        <div class="px-4 py-4 md:py-12 mx-auto max-w-screen-xl lg:px-6">
+          <div class="mx-auto max-w-screen-md sm:text-center">
+            <h2 class="mb-4 text-3xl tracking-tight font-bold text-gray-50 sm:text-4xl dark:text-white">Inscreva-se em nossa newsletter</h2>
+            <p class="mx-auto mb-8 md:mb-8 max-w-2xl font-ligth text-gray-50 sm:text-xl dark:text-gray-400">Receba notificações das melhores ofertas da nossa plataforma e fique por dentro dos assuntos, cursos e todas as novidades.</p>
+            <form action="#">
+              <div class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
+                <div class="relative w-full">
+                  <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                    <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                  </div>
+                  <input class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Digite seu email" type="email" id="email" required></input>
+                </div>
+                <div>
+                  <button type="submit" class="py-3 px-5 w-full md:w-32 text-sm text-center text-blue font-bold rounded-lg  border border-yellow-500 cursor-pointer bg-yellow-600 sm:rounded-none sm:rounded-r-lg hover:bg-yellow-500 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Inscreva-se</button>
+                </div>
+              </div>
+              <div class="mx-auto max-w-screen-sm text-sm text-left text-gray-50 newsletter-form-footer dark:text-gray-300">Preocupamo-nos com a proteção dos seus dados. <a href="#" class="font-medium text-primary-600 dark:text-primary-500 hover:underline">Read our Privacy Policy</a>.</div>
+            </form>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }
