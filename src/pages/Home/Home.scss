@@ -14,6 +14,17 @@
           @apply w-12
         }
       }
+
+      @include tablet {
+        @apply flex justify-center;
+
+        input {
+          @apply mt-6
+        }
+        nav {
+         @apply pt-6 pb-4
+        }
+      }
     }
       
       input {
@@ -53,6 +64,10 @@
       img {
         @apply w-full;
       }
+
+      @include tablet {
+        @apply h-80;
+      }
     }
   }
 
@@ -61,7 +76,22 @@
   }
 
   .carousel-slick {
-    @apply container mx-auto mb-8
+    @apply container mx-auto mb-8;
+
+    &--title {
+      @apply px-20 py-8;
+      p {
+        @apply pb-2 text-gray-500 font-bold text-4xl 
+      }
+
+      @include mobile {
+        @apply py-8 px-12;
+
+        p {
+          @apply text-2xl text-center
+        }
+      }
+    }
   }
 
   .hero {
@@ -79,7 +109,7 @@
 
 		@include mobile {
 
-			@apply bg-none my-8 px-5;
+			@apply h-96 bg-none my-0 px-5;
 
 			h1 {
 				@apply text-3xl text-center px-4;
@@ -121,7 +151,7 @@
             @apply block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
           }
           button {
-            @apply py-3 px-5 w-full md:w-32 text-sm text-center text-blue font-bold rounded-lg  border border-yellow-600 cursor-pointer bg-yellow-600 sm:rounded-none sm:rounded-r-lg hover:bg-yellow-500 focus:ring-4;
+            @apply py-3 px-5 w-full md:w-32 text-sm text-center text-blue font-bold rounded-lg  border border-yellow-600 cursor-pointer bg-yellow-500 sm:rounded-none sm:rounded-r-lg hover:bg-yellow-500 focus:ring-4;
           }
         }
         

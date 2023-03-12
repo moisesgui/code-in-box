@@ -2,11 +2,11 @@ import React from "react";
 import Carousel from "react-elastic-carousel";
 import { ProductCard } from "../../components/productCard/ProductCard";
 
-import htmlThumbnail from "../../../assets/imagens/html-thumbnail.png"
-import reactThumbnail from "../../../assets/imagens/react-thumbnail.png"
-import gestaoThumbnail from "../../../assets/imagens/gestao-thumbnail.png"
-import fullstackThumbnail from "../../../assets/imagens/fullstack-thumbnail.png"
-import componentThumbnail from "../../../assets/imagens/componente-thumbnail.png"
+import htmlThumbnail from "../../../assets/imagens/html-thumbnail.png";
+import reactThumbnail from "../../../assets/imagens/react-thumbnail.png";
+import gestaoThumbnail from "../../../assets/imagens/gestao-thumbnail.png";
+import fullstackThumbnail from "../../../assets/imagens/fullstack-thumbnail.png";
+import componentThumbnail from "../../../assets/imagens/componente-thumbnail.png";
 import "./Slider.scss"
 
 const breakPoints = [

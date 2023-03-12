@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Slider } from "../../shared/components/slider/Slider";
+import { BannerCarousel } from "shared/components/BannerCarousel/BannerCarousel";
 import logoCode from '../../assets/imagens/logo01.png';
 import burgerMenu from '../../assets/imagens/burger-menu.png';
 import bannerImg from '../../assets/imagens/banner-desktop.png';
@@ -39,11 +40,17 @@ export const Home = () => {
       </header>
 
       <section className="banner">
-        <div className="banner--mini">
+        <div className="hidden banner--mini">
           <p>Os melhores cursos de desenvolvimento, você só encontrar aqui!</p>
         </div>
         <div className="banner--desktop">
           <img src={bannerImg} alt="banner-topo" />
+        </div>
+      </section>
+
+      <section className="hidden md:block">
+        <div>
+          <BannerCarousel />
         </div>
       </section>
 
@@ -60,6 +67,12 @@ export const Home = () => {
 
       <section className="carousel-slick">
         <div>
+          <div className="carousel-slick--title">
+            <p>
+              Tragetória Front-end
+            </p>
+            <hr></hr>
+          </div>
           <Slider />
         </div>
       </section>
