@@ -54,13 +54,12 @@
       @apply flex justify-center items-center h-7 text-center text-sm text-white font-semibold bg-gray-500;
 
       @include mobile {
-        @apply text-xs items-center
+        @apply text-xs items-center h-8
       }
     }
 
     &--mobile {
       img {
-
         @apply rounded-b-2xl
       }
     }
@@ -126,7 +125,7 @@
 			@apply h-96 bg-none my-0 px-5;
 
 			h1 {
-				@apply text-3xl text-center px-4;
+				@apply text-3xl text-center px-2;
 			}
 			p {
 				@apply text-center;
@@ -176,7 +175,7 @@
       }
     }
     @include mobile {
-      @apply rounded-2xl;
+      @apply rounded-b-2xl;
     }
   }
 

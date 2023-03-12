@@ -4,7 +4,7 @@ import { Slider } from "../../shared/components/slider/Slider";
 import { BannerCarousel } from "shared/components/BannerCarousel/BannerCarousel";
 import logoCode from '../../assets/imagens/logo01.png';
 import burgerMenu from '../../assets/imagens/burger-menu.png';
-import fullbaner from '../../assets/imagens/code-banner-1.png';
+import fullbaner from '../../assets/imagens/code-banner-4.png';
 import bannerMobile from '../../assets/imagens/banner-mobile-1.png';
 
 import './Home.scss';
@@ -43,7 +43,7 @@ export const Home = () => {
 
       <section className="banner">
         <div className="hidden banner--mini">
-          <p>Os melhores cursos de desenvolvimento, você só encontrar aqui!</p>
+          <p>Os melhores cursos de desenvolvimento, você encontrar aqui!</p>
         </div>
         <div className="md:hidden banner--mobile">
           <img src={bannerMobile} alt="banner-mobile" />
@@ -61,7 +61,7 @@ export const Home = () => {
 
       <section className="container mx-auto">
         <div className="hero">
-          <h1>Aprenda a ser um programador mais do que completo</h1>
+          <h1>Aprenda a ser um programador completo!</h1>
           <p>Aprenda de forma prática com mentores experts do mercado a desenhar e produzir softwares do início ao fim, com conhecimentos de Front-End e Back-End.</p>
           <a href="#">
             Saber mais
