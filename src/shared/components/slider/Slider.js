@@ -29,7 +29,7 @@ export const Slider = () => {
 
         <ProductCard img={gestaoThumbnail} title="Curso avançado de Gestão de TI" description="Entenda as metodologias e etapas de cada projeto e aprenda as melhores formas de acompanhar e mensurar cada um deles." />
 
-        <ProductCard img={fullstackThumbnail} title="Curso básico de Fullstack" description="Aprenda a partir de uma visão ampla do mercado de TI. Se desenvolva em programação Phyton e JavaScript. Crie sites, e trabalhe com bancos de dados." />
+        <ProductCard img={fullstackThumbnail} title="Curso básico para Fullstack" description="Aprenda a partir de uma visão ampla do mercado de TI. Se desenvolva em programação Phyton e JavaScript. Crie sites, e trabalhe com bancos de dados." />
 
         <ProductCard img={componentThumbnail} title="Curso básico de Componentização" description="Aprenda React Js, Redux, Webpack, Redux-Form, MongoDB, Express, Node e Vários exercícios práticos e Duas Apps do ZERO!" />
 

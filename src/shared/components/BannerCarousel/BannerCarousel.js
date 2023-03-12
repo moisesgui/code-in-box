@@ -12,8 +12,8 @@ import "./BannerCarousel.scss"
 const breakPoints = [
 	{ width: 1, itemsToShow: 1 },
 	{ width: 550, itemsToShow: 4, itemsToScroll: 4 },
-	{ width: 768, itemsToShow: 4 },
-	{ width: 1200, itemsToShow: 6 }
+	{ width: 768, itemsToShow: 6 },
+	{ width: 1200, itemsToShow: 10 }
 ];
 
 export const BannerCarousel = () => {
