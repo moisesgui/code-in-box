@@ -10,6 +10,8 @@
       @apply container flex flex-wrap mx-auto py-4 px-0 justify-between flex-col md:flex-row items-center;
 
       .header__logo-container {
+        @apply gap-8;
+
         .logo-burger {
           @apply w-12
         }
@@ -27,12 +29,12 @@
       }
     }
       
-      input {
+    input {
       @apply bg-gray-800 text-white rounded-l-lg border border-gray-700 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 w-full md:w-128;
     }
 
     .search-button {
-      @apply inline-flex justify-center items-center w-28 text-blue font-semibold bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-200 rounded-r-lg;
+      @apply hidden md:inline-flex justify-center items-center w-28 text-blue font-semibold bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-200 rounded-r-lg;
     }
 
     @include mobile {
@@ -40,10 +42,14 @@
 			
       form {
         @apply flex pt-4;
-      }
 
+        input {
+          @apply rounded-lg w-80;
+        }
+
+      }
       .header__logo-container {
-        @apply w-full flex flex-row items-center justify-around;
+        @apply w-full flex flex-row items-center justify-start px-8;
       }
     }
   }

@@ -3,7 +3,6 @@ import React from "react";
 import { Slider } from "../../shared/components/slider/Slider";
 import { BannerCarousel } from "shared/components/BannerCarousel/BannerCarousel";
 import logoCode from '../../assets/imagens/logo01.png';
-import burgerMenu from '../../assets/imagens/burger-menu.png';
 import fullbaner from '../../assets/imagens/code-banner-4.png';
 import bannerMobile from '../../assets/imagens/banner-mobile-1.png';
 
@@ -17,7 +16,9 @@ export const Home = () => {
         <div className="header__content">
           <div className="header__logo-container">
             <button href="#" className="md:hidden js-burgerMenu">
-              <img src={burgerMenu} className="logo-burger" alt="code-logo" width={40} />
+            <svg className="text-gray-50" xmlns="http://www.w3.org/2000/svg" width="36" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
             </button>
             <a href="#" className="header_content--logo">
               <img src={logoCode} alt="code-logo" width={200} />
