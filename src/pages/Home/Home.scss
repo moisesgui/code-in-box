@@ -17,6 +17,10 @@
         }
       }
 
+      .mobile-menu--active {
+        @apply flex bg-blueLight shadow-2xl rounded-b-xl h-96 w-full py-4 px-8 flex-col text-base overflow-hidden absolute top-16 left-0 origin-top border border-gray-600;
+      }
+
       @include tablet {
         @apply flex justify-center;
 
@@ -65,12 +69,6 @@
 
       @include mobile {
         @apply text-xs items-center h-8
-      }
-    }
-
-    &--mobile {
-      img {
-        @apply rounded-b-3xl;
       }
     }
 
