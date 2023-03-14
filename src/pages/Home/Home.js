@@ -48,20 +48,20 @@ export const Home = () => {
           </form>
 
           <nav>
-            <div className="mobile-menu hidden md:flex md:justify-center md:items-center">
-              <a href="#" className="py-2 mr-4 hover:text-yellow-500 tracking-wide">Home</a>
-              <a href="#" className="py-2 mr-4 hover:text-yellow-500 tracking-wide">Planos</a>
-              <a href="#" className="py-2 mr-4 hover:text-yellow-500 tracking-wide">Contato</a>
+            <div className="nav-menu mobile-menu">
+              <a href="#">Home</a>
+              <a href="#">Planos</a>
+              <a href="#">Contato</a>
 
-              <div className="mt-24 md:mt-0 md:flex items-center">
+              <div className="form-login">
                 <div className="md:flex md:items-center md:gap-2">
-                  <a className="block px-6 py-2 mb-2 md:px-0 md:m-0 md:mr-4 leading-loose text-sm md:text-base text-center md:hover:bg-inherit hover:bg-yellow-500 font-bold md:font-normal border border-gray-50 md:border-none md:hover:text-yellow-500 rounded-xl" href="#">
+                  <a className="register" href="#">
                     Registrar-se</a>
 
-                  <a className="block px-6 md:px-9 md:py-1.5 py-2 md:m-0 leading-loose text-sm text-center text-blue font-bold bg-gray-50 md:bg-inherit md:text-gray-50 md:hover:bg-gray-50 md:border md:border-gray-50 md:hover:text-blue rounded-xl md:rounded-lg tracking-wide" href="#">
+                  <a className="login" href="#">
                     Login</a>
                 </div>
-                <p className="my-2 text-xs text-center text-gray-400">
+                <p className="my-2 text-xs text-center md:hidden text-gray-400">
                   <span className="md:hidden">Copyright © 2023</span>
                 </p>
               </div>
