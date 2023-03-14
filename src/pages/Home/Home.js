@@ -10,20 +10,20 @@ import './Home.scss';
 
 
 export const Home = () => {
-  
+
   const openBurgerMenu = () => {
     const mobileMenu = document.querySelector('.mobile-menu');
 
     mobileMenu.classList.toggle('mobile-menu--active');
- 
+
   }
-  
+
   return (
     <div className="home-container">
       <header>
         <div className="header__content">
           <div className="header__logo-container">
-    
+
             <button className="md:hidden burger-menu w-6 h-4 transition" onClick={openBurgerMenu}>
               <span className="block bg-current h-1 mb-1 rounded-sm transition transform"></span>
               <span className="block bg-current h-1 mb-1 rounded-sm transition transform"></span>
@@ -33,17 +33,18 @@ export const Home = () => {
               <img src={logoCode} alt="code-logo" width={180} />
             </a>
           </div>
+
           <form>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffff" className="md:hidden bi bi-search" viewBox="0 0 16 16">
-              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-            </svg>
-            <input
-              placeholder="Buscar..."
-              type="text"
-            />
-            <button className="search-button">
-              Buscar
-            </button>
+            <label for="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+            <div class="form__content">
+              <div class="absolute inset-y-1 left-0 flex items-center pl-3 pointer-events-none">
+                <svg aria-hidden="true" class="w-5 h-5 text-gray-50 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+              </div>
+              <input type="search" id="default-search" placeholder="Buscar" required></input>
+
+              <button type="submit" className="search-button">Buscar</button>
+            </div>
           </form>
 
           <nav>
@@ -52,13 +53,15 @@ export const Home = () => {
               <a href="#" className="py-2 mr-4 hover:text-yellow-500 tracking-wide">Planos</a>
               <a href="#" className="py-2 mr-4 hover:text-yellow-500 tracking-wide">Contato</a>
 
-              <div class="mt-24 md:mt-0 md:flex items-center">
+              <div className="mt-24 md:mt-0 md:flex items-center">
                 <div className="md:flex md:items-center md:gap-2">
-                  <a class="block px-6 py-2 mb-2 md:px-0 md:m-0 md:mr-4 leading-loose text-sm md:text-base text-center md:hover:bg-inherit hover:bg-yellow-500 font-bold md:font-normal border border-gray-50 md:border-none md:hover:text-yellow-500 rounded-xl" href="#">Registrar-se</a>
+                  <a className="block px-6 py-2 mb-2 md:px-0 md:m-0 md:mr-4 leading-loose text-sm md:text-base text-center md:hover:bg-inherit hover:bg-yellow-500 font-bold md:font-normal border border-gray-50 md:border-none md:hover:text-yellow-500 rounded-xl" href="#">
+                    Registrar-se</a>
 
-                  <a class="block px-6 md:px-6 py-2 md:m-0 leading-loose text-sm text-center text-blue font-bold bg-gray-50 md:text-blue md:hover:bg-yellow-500 rounded-xl md:rounded-lg tracking-wide" href="#">Login</a>
+                  <a className="block px-6 md:px-9 md:py-1.5 py-2 md:m-0 leading-loose text-sm text-center text-blue font-bold bg-gray-50 md:bg-inherit md:text-gray-50 md:hover:bg-gray-50 md:border md:border-gray-50 md:hover:text-blue rounded-xl md:rounded-lg tracking-wide" href="#">
+                    Login</a>
                 </div>
-                <p class="my-2 text-xs text-center text-gray-400">
+                <p className="my-2 text-xs text-center text-gray-400">
                   <span className="md:hidden">Copyright © 2023</span>
                 </p>
               </div>
@@ -182,7 +185,7 @@ export const Home = () => {
             </div>
           </div>
         </div>
-        <hr/>
+        <hr />
         <div className="social-media">
           <span className="text-sm text-gray-300 sm:text-center dark:text-gray-400">© 2023.Todos os direitos reservados.
           </span>

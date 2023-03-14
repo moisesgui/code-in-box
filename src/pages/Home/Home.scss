@@ -7,57 +7,56 @@
     @apply bg-blue text-gray-50 shadow-xl sticky top-0 z-10;
 
     .header__content {
-      @apply container flex flex-wrap mx-auto py-4 px-0 justify-between flex-col md:flex-row items-center;
-
-      .header__logo-container {
-        @apply gap-8;
-
-        .logo-burger {
-          @apply w-12
-        }
-      }
+      @apply container flex flex-wrap mx-auto py-4 px-4 justify-between flex-col md:flex-row items-center;
 
       .mobile-menu--active {
         @apply flex bg-blueLight shadow-2xl rounded-b-xl h-96 w-full py-4 px-8 flex-col text-base overflow-hidden absolute top-16 left-0 origin-top border border-gray-600;
       }
 
-      @include tablet {
-        @apply flex justify-center;
+      .form__content {
+        @apply relative md:w-128 md:mt-4 lg:m-0;
 
         input {
-          @apply mt-6
+          @apply md:w-full;
+        }
+      }
+
+      @include mobile {
+        form {
+          @apply w-full;
+        }
+      }
+
+      @include tablet {
+        @apply flex justify-center flex-col;
+
+        input {
+          @apply w-128
         }
         nav {
          @apply pt-6 pb-4
         }
       }
+
+      .search-button {
+        @apply border border-yellow-500 bg-yellow-500 px-6 py-2 text-blue absolute right-0.5 bottom-1 md:bottom-0.5 hover:bg-yellow-400 focus:ring-4 focus:outline-none focus:ring-blue font-medium rounded-mdd text-sm dark:bg-blue dark:hover:bg-blue dark:focus:ring-blue;
+      }
     }
       
     input {
-      @apply bg-gray-800 text-white rounded-l-lg border border-gray-700 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 w-full md:w-128;
+      @apply bg-gray-800 text-white rounded-lg border border-gray-700 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 pl-10;
     }
 
-    .search-button {
-      @apply hidden md:inline-flex justify-center items-center w-28 text-blue font-semibold bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-200 rounded-r-lg;
-    }
 
     @include mobile {
-			@apply sticky z-50 top-0;
-			
-      form {
-        @apply flex pt-4;
-
-        svg {
-          @apply fixed top-88 right-12;
-        }
-
-        input {
-          @apply rounded-lg w-80;
-        }
-
+      @apply sticky z-50 top-0;
+      
+      input {
+        @apply block py-3 mt-4 pl-10 text-sm text-gray-50 border border-gray-700 rounded-lg bg-gray-800 focus:ring-blueLight focus:border-indigo-800 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blueLight dark:focus:border-blueLight w-full
       }
+      
       .header__logo-container {
-        @apply w-full flex flex-row items-center justify-start px-8;
+        @apply w-full flex flex-row items-center justify-between px-2;
       }
     }
   }
@@ -176,7 +175,7 @@
             @apply block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
           }
           button {
-            @apply py-3 px-5 w-full md:w-32 text-sm text-center text-blue font-bold rounded-lg  border border-yellow-600 cursor-pointer bg-yellow-500 sm:rounded-none sm:rounded-r-lg hover:bg-yellow-500 focus:ring-4;
+            @apply py-3 px-5 w-full md:w-32 text-sm text-center text-blue font-bold rounded-lg  border border-yellow-600 cursor-pointer bg-yellow-500 sm:rounded-none sm:rounded-r-lg hover:bg-yellow-400 focus:ring-4;
           }
         }
         

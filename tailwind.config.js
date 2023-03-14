@@ -6,10 +6,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      borderRadius: {
+        'mdd': '0.4rem',
+      },
       spacing: {
         '100': '6.25rem',
         '128': '32rem',
-        '88': '5.5rem'
+        '88': '5.5rem',
+        '90': '22rem'
       },
       backgroundImage: {
         'hero-image': "url('/src/assets/imagens/bg-hero.png')",
