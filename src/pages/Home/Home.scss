@@ -3,6 +3,10 @@
 .home-container {
   @apply flex flex-col h-screen;
 
+  #default-search {
+    -webkit-appearance: none;
+  }
+
   header {
     @apply bg-blue text-gray-50 shadow-xl sticky top-0 z-10;
 
@@ -39,7 +43,7 @@
       }
 
       .search-button {
-        @apply border border-yellow-500 bg-yellow-500 px-6 py-2 text-blue absolute right-0.5 bottom-1 md:bottom-0.5 hover:bg-yellow-400 focus:ring-4 focus:outline-none focus:ring-blue font-medium rounded-mdd text-sm dark:bg-blue dark:hover:bg-blue dark:focus:ring-blue;
+        @apply border border-yellow-500 bg-yellow-500 px-6 py-2 text-blue absolute right-0.5 bottom-1 md:bottom-0.5 hover:bg-yellow-400 focus:ring-4 focus:outline-none focus:ring-blue font-medium rounded-mdd text-sm dark:text-yellow-500 dark:bg-blue dark:hover:bg-blue dark:focus:ring-blue;
       }
     }
       
