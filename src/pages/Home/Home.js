@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 import { Slider } from "../../shared/components/slider/Slider";
 import { BannerCarousel } from "shared/components/BannerCarousel/BannerCarousel";
@@ -11,23 +11,46 @@ import './Home.scss';
 
 export const Home = () => {
 
-  const openBurgerMenu = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
+
+  const burgerMenuContent = () => {
     const mobileMenu = document.querySelector('.mobile-menu');
-
     mobileMenu.classList.toggle('mobile-menu--active');
-
   }
+
 
   return (
     <div className="home-container">
       <header>
         <div className="header__content">
           <div className="header__logo-container">
-
-            <button className="md:hidden burger-menu w-6 h-4 transition" onClick={openBurgerMenu}>
-              <span className="block bg-current h-1 mb-1 rounded-sm transition transform"></span>
-              <span className="block bg-current h-1 mb-1 rounded-sm transition transform"></span>
-              <span className="block bg-current h-1 mb-1 rounded-sm transition transform"></span>
+            <button
+              className="burger-menu"
+              onClick={() => {
+                setIsOpen(!isOpen)
+                burgerMenuContent();
+              }}
+            >
+              <div
+                className={`${genericHamburgerLine} ${
+                  isOpen
+                    ? "rotate-45 translate-y-3 opacity-50 group-hover:opacity-100 bg-gray-50"
+                    : "opacity-50 group-hover:opacity-100 bg-gray-50"
+                }`}
+              />
+              <div
+                className={`${genericHamburgerLine} ${
+                  isOpen ? "opacity-0" : "opacity-50 group-hover:opacity-100 bg-gray-50"
+                }`}
+              />
+              <div
+                className={`${genericHamburgerLine} ${
+                  isOpen
+                    ? "-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100 bg-gray-50"
+                    : "opacity-50 group-hover:opacity-100  bg-gray-50"
+                }`}
+              />
             </button>
             <a href="#" className="header_content--logo">
               <img src={logoCode} alt="code-logo" width={180} />
